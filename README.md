@@ -1,40 +1,34 @@
-# CrossComplyAI - RegFlex™ Engine
+CrossComplyAI - RegFlex™ Engine
 
 ## 1. Project Overview
+**CrossComplyAI** is a deep-tech "Jurisdictional Adaptation Layer" (Layer 4.3) within the broader Trustvestor ecosystem. It is designed to solve the critical problem of cross-border regulatory compliance for Small and Medium-sized Enterprises (SMEs) in the European Union, operationalizing the "28th Regime" (EU-INC).
 
-**CrossComplyAI** is a groundbreaking RegTech SaaS platform designed to solve the critical problem of cross-border regulatory compliance for Small and Medium-sized Enterprises (SMEs) in the European Union. Our mission is to democratize access to complex legal intelligence, transforming regulatory burdens from a barrier to growth into a competitive advantage.
+While Trustvestor's core infrastructure (Trust4Layer) provides the cryptographic identity and Zero-Knowledge Proofs (Who are you?), CrossComplyAI provides the deterministic regulatory logic (What are the rules?). 
 
-This repository contains the foundational concepts and architectural outlines for the core technology, the **RegFlex™ Engine**.
+**Project Status (as of 2026):**
+* **Current TRL:** TRL 4 (Active R&D Phase)
+* **Strategic Focus:** Seeking integration with specialized European Legal-NLP partners and funding to advance the architecture to TRL 6/7.
 
-**Project Status (as of November 2025):**
-*   **Current TRL:** TRL 4 (Technology validated in lab)
-*   **Current Goal:** Seeking funding from the **EIC Pre-Accelerator** program to develop the technology to TRL 6 (Technology demonstrated in relevant environment) and achieve market validation.
+## 2. The Problem: The "Fragmentation Tax"
+Cross-border expansion within the EU's single market is prohibitively complex. The fragmentation of regulations—from VAT and Extended Producer Responsibility (EPR) to the EU AI Act—creates an administrative nightmare. SMEs pay up to €10,000 per country just for legal analysis, creating a massive "fragmentation tax" that blocks single-market interoperability.
 
-## 2. The Problem: The "Growth Tax" on European SMEs
+## 3. Our Solution: The RegFlex™ Architecture
+Our breakthrough lies in the "Compliance-as-Code" paradigm. We do not build "legal chatbots" that hallucinate advice. Instead, we use a multi-stage applied AI architecture to translate abstract legal texts into deterministic, executable workflows.
 
-Cross-border expansion within the EU's single market is prohibitively complex for SMEs. The fragmentation of regulations, particularly in the areas of **Value Added Tax (VAT)** and **Extended Producer Responsibility (EPR)**, creates an administrative and financial nightmare:
-- **Exponential Costs:** Compliance costs can escalate to over **€140,000 annually** for EPR alone.
-- **Administrative Overload:** SMEs can face up to **4,000 hours** of administrative work per year.
-- **Regulatory Uncertainty:** Impending deadlines for major regulations like **ViDA (2025)** and **PPWR (2026)** make manual processes obsolete and risky.
+The core of our innovation is the **"Derogation Engine,"** which operates through four highly specialized components:
 
-Existing solutions fail to address this specific niche: horizontal GRC platforms (like Formalize, DataGuard) lack the necessary depth, while traditional consultants are economically unsustainable for SMEs.
+1. **RegLogic Engine (The NLP/Semantic Core):** 
+   To "read" the law. This module performs semantic analysis of regulatory texts from EUR-Lex and National State Gazettes. *Architectural note: We deliberately keep this layer modular and API-driven, designed to ingest semantic outputs from specialized, third-party European Legal AI and RAG (Retrieval-Augmented Generation) platforms.*
+2. **Graph Neural Networks (GNNs):** 
+   To "see" the law. Once the NLP core extracts the semantics, the GNN maps the complex web of dependencies between EU harmonized directives and 27 specific national implementations.
+3. **Proprietary Jurisdictional Deviation Index (JDI)™:** 
+   To "measure" the law. An algorithm that mathematically quantifies the "legal distance" or structural deviations between jurisdictions, allowing for automated compliance gap analysis.
+4. **ZKP/Cryptographic Integration (via Trust4Layer):** 
+   To "enforce" the law. The resulting deterministic Boolean logic is passed to the Trustvestor cryptographic layer to generate machine-readable Qualified Electronic Attestations (QEAAs) via Zero-Knowledge Proofs.
 
-## 3. Our Solution: The RegFlex™ Engine
+## 4. Current Focus and Collaboration
+To avoid the resource drain of training proprietary Large Language Models on millions of European legal documents, CrossComplyAI's development strategy is collaborative. 
 
-Our breakthrough is not just a new AI model, but a novel **applied architecture** that uses a combination of mature AI technologies to deliver a unique value proposition.
+We focus our internal R&D purely on the structural/graph mapping (GNNs) and the cryptographic output (ZKPs). We are actively seeking strategic consortium partnerships with established LegalTech AI providers (Semantic AI/NLP Layer 3) to bridge the semantic gap and jointly deploy end-to-end "Runtime Enforcement" compliance systems for the EU market.
 
-The core of our innovation is the **"Derogation Engine"**, which combines three key components:
-1.  **Graph Neural Networks (GNNs):** To map and understand the complex web of dependencies between EU directives and 27 national implementations.
-2.  **Reinforcement Learning (RL):** To create a self-improving system that learns from every transaction and every validation provided by our "human-in-the-loop" legal experts.
-3.  **Proprietary Jurisdictional Deviation Index (JDI)™:** To quantify the "legal distance" between jurisdictions, allowing for automated risk assessment.
-
-This engine powers our **"Compliance-as-Code"** approach, transforming abstract legal texts into executable, automated workflows for SMEs.
-
-## 4. MVP Focus (EIC Pre-Accelerator)
-
-The initial MVP will be surgically focused on the most immediate market pain point: **cross-border VAT compliance**, driven by the ViDA regulation entering into force in 2025.
-
-The three core functions of the MVP are:
-1.  **VAT SME Scheme Threshold Tracker:** Real-time monitoring of a company's EU-wide turnover against the €100,000 threshold.
-2.  **RegFlex™ VAT Core:** The core engine, focused on identifying and applying national VAT derogations for our pilot countries (BG, DE, NL).
-3.  **One-Click Reporting & Audit Shield:** Automated generation of OSS/IOSS reports with a complete, immutable audit trail to protect against sanctions.
+--------------------------------------------------------------------------------
